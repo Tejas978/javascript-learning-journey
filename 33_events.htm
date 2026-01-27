@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Concept</title>
+</head>
+
+
+    <!-- <p id  = "hello" onclick="alert('Namaste')">
+        click to get the alert 
+    </p> -->
+    <!-- <div id = "best">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, blanditiis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laborum voluptate quia sit, consequatur error minus architecto laboriosam ad natus iure, neque ea laudantium temporibus.
+    </div> -->
+    <body style="background-color: #414141; color: aliceblue;">
+        <h2>Amazing image</h2>
+        <div >
+            <ul id="images">
+                <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+                <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+                <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+                <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+                <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+                <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+            </ul>
+       </div>
+    </body>
+    <script>
+        // document.getElementById("best").addEventListener('click',function(){
+        //     alert("Namaste")
+        // })
+
+        document.getElementById("images").addEventListener("dblclick",function(){
+            alert("Clicked on the Outside")
+        },false)
+        document.getElementById("owl").addEventListener("dblclick",function(e){
+            alert("Clicked on the OWL")
+            // e.stopPropagation()
+        },false)
+
+    </script>
+
+
+</html>

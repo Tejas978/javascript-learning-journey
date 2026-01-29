@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Function in JS</title>
+</head>
+<body style="background: #000" >
+
+    <div id = "hell" style="color: aqua;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus dolorem aliquam distinctio.
+    </div>
+    <div>
+        <button id="hello">
+            click me
+        </button>
+    </div>
+    <script>
+        // const place = function(){
+        //    console.log("Hello Tejas");
+        // }
+        // setTimeout(place,2000);
+    //  let max = function(){document.getElementById("hell").innerText = "I am new Comer"}
+    //  console.log(max);
+    //  setTimeout(max,2000)
+    const change = function(){ document.querySelector("#hell")
+        .innerHTML = "Hello this is Testing"
+       }
+    const changeme =  setTimeout(change,2000)
+    document.querySelector("#hello").addEventListener("click",
+        function(){
+            clearTimeout(changeme)
+            console.log("stoping...")
+        }
+    )
+       
+    
+    </script>
+</body>
+</html>
